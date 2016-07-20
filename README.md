@@ -2,7 +2,7 @@
 This maven project demonstrates how to convert from XML to Object
 
 The mule context contains a jaxb context which points to a specifc java package.
-The jaxb-xml-to-object-transformer reference the context and declares the java class expected to be returned.
+The jaxb-xml-to-object-transformer references the context and declares the java class expected to be returned.
 ```
 	<mulexml:jaxb-context name="myJaxb" packageNames="bayeslife"/>
 
@@ -38,7 +38,7 @@ There is a jaxb.index file in the resources folder which lists all classes with 
 
 The test case has positive and negative scenarios so that we verify the functionality works and the test itself works.
 
-The test load the mule context by virtue of being a functional test case and declaring a getConfigResources method pointing to the flow.
+The test loads the mule context by virtue of being a functional test case and declaring a getConfigResources method pointing to the flow.
 
 The xml is prepared into a Mule Message and send to the flow.
 The payload from the flow is expected to be the java object with the appropriate content.
